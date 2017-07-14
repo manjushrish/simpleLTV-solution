@@ -86,11 +86,17 @@ The main processing is done using methods inside the EventDataProcessor class na
 
 The values for the above are set during ingestion in the ingest method.
 
-The minEventDate is the least event date across all events and maxEventDate is the maximum. The numberOfWeeks is calculated as difference between the week numbers + 1. 
+The minEventDate is the least event date across all events and maxEventDate is the maximum. The numberOfWeeks is calculated as difference between the week numbers of maxEventDate and minEventDate + 1. 
 
 During ingestion of the events the customers metrics such as total order amount is precalculated eliminating the need for re-iterating through the list of events for each customer when calculating the simpleLTV.
 
 The results of the simpleLTV calculation is stored in an ArrayList of CustomerActivityMetrics. This allows us to sort the results based on the simpleLTV value using the Collections.sort method. Of course to do this CustomerActivityMetrics needs to implement Comparable.
+
+### Time complexity
+
+The ingest method would need to loop through each event, if we N events this will be O(N). When building the hashMap we will be able to retrieve the insertion point of the acitivity for that customer fairly easily (O(1)) using the customer id which is the key of the hashmap.
+
+For the simple LTV calculation we will just loop through as many times as there are unique customers in the data since during ingestion we precalcuated the order total amount and total weeks. So if N events contain m unique customers we will loop through m times since the HashMap has m entries. So this is O(m).
 
 ## Built With
 
