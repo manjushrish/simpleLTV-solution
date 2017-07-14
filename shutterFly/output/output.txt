@@ -3,6 +3,7 @@
 -----------------------------------------------------------
 
  Customer id: 00115 has simple LTV of: 312000.00 USD
+ Customer id: 00100 has simple LTV of: 254800.00 USD
  Customer id: 00123 has simple LTV of: 249600.00 USD
  Customer id: 00124 has simple LTV of: 244400.00 USD
  Customer id: 00122 has simple LTV of: 239200.00 USD
@@ -11,6 +12,5 @@
  Customer id: 00119 has simple LTV of: 208000.00 USD
  Customer id: 00118 has simple LTV of: 197600.00 USD
  Customer id: 00117 has simple LTV of: 187200.00 USD
- Customer id: 00116 has simple LTV of: 176800.00 USD
 
 -----------------------------------------------------------
