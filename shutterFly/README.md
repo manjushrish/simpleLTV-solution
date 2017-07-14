@@ -37,7 +37,7 @@ The input events can be presented in any order and the application doesn't assum
 
 Updates to orders are handled but the application doesnt assume the order in which the Order events are provided as input is the correct order. The event_time is used to confirm that an update to an existing order has a newer event_time than the existing order.
 
-If Orders are received out of sequence, i.e. an update Order event was processed before a new order event then the new order event is ignored.
+If Orders are received out of sequence, i.e. an update Order event for a customer was received and processed before a new order event then the new order event is ignored.
 
 ## Running the application
 
