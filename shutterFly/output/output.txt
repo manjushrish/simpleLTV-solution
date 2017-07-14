@@ -1,0 +1,14 @@
+-----------------------------------------------------------
+| List of top 10 simple LTV customers
+-----------------------------------------------------------
+
+ Customer id: 96f55c7d8f42 has simple LTV of: 3850.08 USD
+ Customer id: 96f55c7d8f43 has simple LTV of: 2080.00 USD
+ Customer id: dddddd has simple LTV of: 1283.36 USD
+ Customer id: aaaaaa has simple LTV of: 1283.36 USD
+ Customer id: ggggggg has simple LTV of: 1040.00 USD
+ Customer id: cccccc has simple LTV of: 0.00 USD
+ Customer id: bbbbb has simple LTV of: 0.00 USD
+ Customer id: fffffffff has simple LTV of: 0.00 USD
+
+-----------------------------------------------------------
