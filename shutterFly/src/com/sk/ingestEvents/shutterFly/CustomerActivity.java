@@ -20,7 +20,7 @@ public class CustomerActivity {
     ArrayList<SiteEvent> activityDetails;
 
     /**
-     * 
+     * Constructor
      */
     public CustomerActivity() {
 	activityMetrics = new CustomerAcitivityMetrics();
@@ -29,22 +29,51 @@ public class CustomerActivity {
 
     // getter and setter
 
+    /**
+     * Returns the activityMetrics
+     * 
+     * @return CustomerAcitivityMetrics
+     */
     public CustomerAcitivityMetrics getActivityMetrics() {
 	return activityMetrics;
     }
 
+    /**
+     * Sets the activityMetrics
+     * 
+     * @param activityMetrics CustomerAcitivityMetrics
+     */
     public void setActivityMetrics(CustomerAcitivityMetrics activityMetrics) {
 	this.activityMetrics = activityMetrics;
     }
 
+    /**
+     * Returns activityDetails
+     * 
+     * @return ArrayList&lt;SiteEvent&gt;
+     */
     public ArrayList<SiteEvent> getActivityDetails() {
 	return activityDetails;
     }
 
+    /**
+     * Sets the activityDetails
+     * 
+     * @param activityDetails ArrayList&lt;SiteEvent&gt;
+     */
     public void setActivityDetails(ArrayList<SiteEvent> activityDetails) {
 	this.activityDetails = activityDetails;
     }
 
+    /**
+     * Applies only to an OrderEvent, checks if an existing order with the
+     * same order id is currently present in the memory structure for a customer
+     * 
+     * If found returns the index, else returns -1
+     * 
+     * @param orderId String
+     * @return int
+     */
     public int findMatchingOrderIdIndex(String orderId) {
 	int matchingOrderIdIndex = -1;
 	int i = 0;

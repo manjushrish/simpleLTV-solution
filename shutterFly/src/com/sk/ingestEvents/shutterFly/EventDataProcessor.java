@@ -367,6 +367,18 @@ public class EventDataProcessor {
 	}
     }
 
+    /**
+     * This method takes the path to the input file
+     * 
+     * Reads the file line by line and constructs
+     * a string containing the contents which are
+     * returned back
+     * 
+     * The method handles java.io.IOException
+     * 
+     * @param inputFilePath String
+     * @return String
+     */
     private String buildJSONDataFromFile(String inputFilePath) {
 	String jsonData = "";
 	BufferedReader br = null;
@@ -389,6 +401,10 @@ public class EventDataProcessor {
 	return jsonData;
     }
 
+    /**
+     * This methods prints the contents of the in memory data structure
+     * for review and debugging purposes
+     */
     public void PrintEventDataSet() {
 	System.out.println("-----------------------------------------------------------");
 	for (String key : dataSet.keySet()) {
@@ -420,6 +436,17 @@ public class EventDataProcessor {
 	System.out.println("-----------------------------------------------------------");
     }
 
+    /**
+     * This method prints the top x customers by their simple LTV value to an output
+     * file called output.txt under output directory     *
+     * 
+     * The method loops through each customers activity in the dataSet memory structure
+     * and takes the CustomerActivityMetrics to determine the simple LTV
+     * 
+     * A temporary ArrayList stores the LTV values which is then sorted using Collections.sort
+     * 
+     * @param x int
+     */
     public void TopXSimpleLTVCustomers(int x) {
 	ArrayList<CustomerAcitivityMetrics> cmTopX = new ArrayList<>();
 
