@@ -97,5 +97,6 @@
 {"adr_state":"AK","verb":"NEW","last_name":"Spock","adr_city":"Middletown","type":"CUSTOMER","key":"00124","event_time":"2017-07-31T12:46:46.384Z"},
 {"verb":"NEW","type":"SITE_VISIT","customer_id":"00124","key":"ac05e815502f","event_time":"2017-07-31T13:46:46.384Z","tags":[{"some key":"some value"}]},
 {"camera_make":"Canon","verb":"UPLOAD","type":"IMAGE","customer_id":"00124","camera_model":"EOS 80D","key":"d8ede43b1d9f","event_time":"2017-07-31T14:46:46.384Z"},
-{"total_amount":"2500 USD","verb":"NEW","type":"ORDER","customer_id":"00124","order_id":"00124","key":"68d84e5d1a43","event_time":"2017-07-31T15:46:46.384Z"},
-{"total_amount":"3000 USD","verb":"UPDATE","type":"ORDER","customer_id":"00115","order_id":"00124","key":"68d84e5d1a43","event_time":"2017-07-31T16:46:46.384Z"}]
+{"total_amount":"2350 USD","verb":"UPDATE","type":"ORDER","customer_id":"00124","order_id":"00124","key":"68d84e5d1a43","event_time":"2017-07-31T15:46:46.384Z"},
+{"total_amount":"3000 USD","verb":"UPDATE","type":"ORDER","customer_id":"00115","order_id":"00124","key":"68d84e5d1a43","event_time":"2017-07-31T16:46:46.384Z"},
+{"total_amount":"2400 USD","verb":"NEW","type":"ORDER","customer_id":"00124","order_id":"00124","key":"68d84e5d1a43","event_time":"2017-07-31T15:46:46.384Z"}]
