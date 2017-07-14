@@ -23,10 +23,13 @@ public class JSONEventProcessor {
 	String inputFilePath = "./input/input.txt";
 	EventDataProcessor ep = new EventDataProcessor();
 	ep.ingest(inputFilePath);
-	ep.PrintEventDataSet();
+	
+	//ep.PrintEventDataSet();
+	
 	System.out.println("Min date: " + ep.getMinEventDate());
 	System.out.println("Max date: " + ep.getMaxEventDate());
 	System.out.println("Calculation will be for: " + ep.getNumberOfWeeks() + " weeks");
+	
 	ep.TopXSimpleLTVCustomers(10);	
 	
 	
